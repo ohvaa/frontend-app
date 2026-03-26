@@ -17,5 +17,10 @@ jobs:
             cache: 'npm'
         - name: Install dependencies and build
           run: npm ci # clean install แทน npm install
-        - name: Build the project
+        - name: Build the project (production and create dist folder)
           run: npm run build
+        - name: Upload dist folder artifact
+          uses: actions/upload-artifact@v5
+          with:
+            name: dist-production
+            path: dist
