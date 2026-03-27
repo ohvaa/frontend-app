@@ -12,7 +12,7 @@ COPY package*.json ./
 # install dependencies (use npm ci for reproducible install)
 RUN npm ci
 
-# copy source
+# copy source ยกเว้นที่ระบุใน .dockerignore
 COPY . .
 
 # build production assets (Vite will output to ./dist)
