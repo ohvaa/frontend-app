@@ -3,6 +3,6 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/frontend-app/', //เวลา Doploy ไปที่ GitHub Pages ต้องเพิ่ม base path
+  //base: '/frontend-app/', //เวลา Doploy ไปที่ GitHub Pages ต้องเพิ่ม base path
   plugins: [react()],
 })
